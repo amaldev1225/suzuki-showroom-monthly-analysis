@@ -27,7 +27,7 @@ def most_sold():
     else:
         print("no vehicle sold yet")
 def exit_showroom():
-    print("THANK YOU FOR VISITING MARUTI SUZUKI SHOWROOM")
+    print("----THANK YOU FOR VISITING MARUTI SUZUKI SHOWROOM----")
     if v:
         b=p.DataFrame(list(v.items()),columns=[' car',"sold"])
         b.to_csv("showroom.csv",index=False,mode="a")
@@ -40,7 +40,7 @@ def main():
         print('''    1.show the vehicle 
     2. to buy vehicle
     3.show the vehicle you buyed
-    4. most vehicle saled on this month
+    4. most vehicle saled on this month and view chart
     5. exit
     ''')
         try:
