@@ -11,7 +11,7 @@ def buy_vehicle():
     if b in vehicle:
         v[b]=v.get(b,0)+1
         print(b,"your purchase succesfull")
-    else:
+    else:    
         print("this item is not in suzuki showroom")
 def show_purchase():
     print("your purchase",v)  
@@ -60,4 +60,7 @@ def main():
         except ValueError:
             print("plz enter valid number")        
 main() 
+
+
+
 
