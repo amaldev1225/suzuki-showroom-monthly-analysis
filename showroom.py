@@ -11,7 +11,7 @@ def buy_vehicle():
     if b in vehicle:
         v[b]=v.get(b,0)+1
         print(b,"your purchase succesfull")
-    else:    
+    else:
         print("this item is not in suzuki showroom")
 def show_purchase():
     print("your purchase",v)  
@@ -27,7 +27,7 @@ def most_sold():
     else:
         print("no vehicle sold yet")
 def exit_showroom():
-    print("----THANK YOU FOR VISITING MARUTI SUZUKI SHOWROOM----")
+    print("THANK YOU FOR VISITING MARUTI SUZUKI SHOWROOM")
     if v:
         b=p.DataFrame(list(v.items()),columns=[' car',"sold"])
         b.to_csv("showroom.csv",index=False,mode="a")
@@ -60,7 +60,4 @@ def main():
         except ValueError:
             print("plz enter valid number")        
 main() 
-
-
-
 
